@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Disassembler\Disassembler.cpp">
+      <Filter>Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="PEFile\PEFile.cpp">
+      <Filter>PEFile</Filter>
+    </ClCompile>
+    <ClCompile Include="FileWriter\FileWriter.cpp">
+      <Filter>FileWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="Nanomites\NanomitesCreator.cpp">
+      <Filter>Nanomites</Filter>
+    </ClCompile>
+    <ClCompile Include="PEFile\ResourceAdder.cpp">
+      <Filter>PEFile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Disassembler">
+      <UniqueIdentifier>{92cea276-6e9c-40cc-97ed-f77256d4eb6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PEFile">
+      <UniqueIdentifier>{acde48ea-8b37-4f1a-9231-76ecf0a242a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileWriter">
+      <UniqueIdentifier>{13b87c34-fdf4-451c-932f-f24d4e5bb317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nanomites">
+      <UniqueIdentifier>{8363fcaf-5fdb-4e73-92b5-fcd5979f95c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Disassembler\Disassembler.h">
+      <Filter>Disassembler</Filter>
+    </ClInclude>
+    <ClInclude Include="PEFile\PEFile.h">
+      <Filter>PEFile</Filter>
+    </ClInclude>
+    <ClInclude Include="Disassembler\RelativeJump.h">
+      <Filter>Disassembler</Filter>
+    </ClInclude>
+    <ClInclude Include="FileWriter\FileWriter.h">
+      <Filter>FileWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="Nanomites\Nanomite.h">
+      <Filter>Nanomites</Filter>
+    </ClInclude>
+    <ClInclude Include="Nanomites\NanomiteMetadata.h">
+      <Filter>Nanomites</Filter>
+    </ClInclude>
+    <ClInclude Include="Nanomites\NanomitesCreator.h">
+      <Filter>Nanomites</Filter>
+    </ClInclude>
+    <ClInclude Include="PEFile\ResourceAdder.h">
+      <Filter>PEFile</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

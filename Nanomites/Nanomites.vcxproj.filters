@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ProtectedCode\ProtectedCodeExecutor.cpp">
+      <Filter>ProtectedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtectedCode\Crc32.cpp">
+      <Filter>ProtectedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracer\PEImage.cpp">
+      <Filter>Tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracer\SectionInfo.cpp">
+      <Filter>Tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracer\Tracer.cpp">
+      <Filter>Tracer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ProtectedCode">
+      <UniqueIdentifier>{1A0EF00A-7E77-42FA-A4D0-F63F1DD5EC94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tracer">
+      <UniqueIdentifier>{fc213523-f49d-4c84-9f3e-010d66a5db90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProtectedCode\ProtectedCodeExecutor.h">
+      <Filter>ProtectedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtectedCode\Crc32.h">
+      <Filter>ProtectedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracer\Nanomite.h">
+      <Filter>Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracer\NanomiteMetadata.h">
+      <Filter>Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracer\PEImage.h">
+      <Filter>Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracer\SectionInfo.h">
+      <Filter>Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracer\Tracer.h">
+      <Filter>Tracer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
