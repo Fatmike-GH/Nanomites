@@ -135,29 +135,6 @@ As a demonstration, the following code is included:
 
 Both functions are protected within the encrypted *.nano* section.
 
-## Additional Considerations
-
-In this conceptual solution it is unsatisfactory that the user must manage not only the sections to be protected but also the invocation of the *Tracer* class. In a production-ready implementation, this responsibility could be delegated to a separate *Protector* application:
-
-**Target**
-  - Within the *Target* code, only the sections intended for protection need to be marked.  
-  
-**Protector**
-  - The *Protector* wraps the *Target* with a loader stub capable of loading the *Target* via manual mapping.
-  - By loading the *Target* itself, the loader stub gains full control and can apply the *Tracer* to the protected sections of the *Target* automatically.  
-  
-  This design simplifies usage for the developer and centralizes protection responsibilities within the Protector application.
-
-  ### Implementation
-
-  These ideas were implemented as a proof of concept in one of my crackmes. The protector uses a concept similar to my packer [Fatpack](https://github.com/Fatmike-GH/Fatpack) and relies on my [manual mapper ](https://github.com/Fatmike-GH/PELoader).  
-  
-**crackmes.one**
-  - [Fatmike's Crackme #7](https://crackmes.one/crackme/67814b594d850ac5f7dc4fc9)  
-  
-**crackmy.app**
-  - [Fatmike's Crackme #7](https://crackmy.app/crackmes/fatmike-s-crackme-7-2025-2634)
-
 ## Appendix
 
 ### x86 Conditional and Unconditional Jump Instructions
