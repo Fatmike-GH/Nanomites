@@ -89,7 +89,7 @@ bool Tracer::ResolveNanomite(PCONTEXT context)
 
   if (ExecuteJump(nanomite, context))
   {
-    eip = eip + nanomite->OpcodeLength + (char)nanomite->JumpLength; // (char) : Cast to signed type for correct calculation!
+    eip = eip + nanomite->OpcodeLength + (int)nanomite->JumpLength; // (int) : Cast to signed type for correct calculation!
     SetInstructionPointer(context, eip);
   }
   else
